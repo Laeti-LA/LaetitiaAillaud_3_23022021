@@ -13,37 +13,105 @@
 
     <body>
         <!-- Page d'accueil -->
-        <div class="loading-spinner-container">
-            <!-- Loading-spinner 1 à 3 secondes sur toute la page d'accueil -->
-            <header>
-                <!-- Logo centré -->
-    
-            </header>
-    
-            <section>
-                <!-- Section 1 : Localisation, titre et bouton "explorez" -->
-            </section>
-    
-            <section>
-                <!-- Section 2 : Fonctionnement (liste numérotée) -->
-            </section>
-    
-            <section>
-                <!-- Restaurants : chaque carte mène à la page du restaurant concerné -->
-            </section>
-    
-            <footer>
-                <!-- Menu de navigation (liste à puces 4 liens) -->
-                <div>
-                    <h3>ohmyfood</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>            
-            </footer>
+        <div class="loader">
+            <!-- Loading-spinner 1 à 3 secondes, couvre toute la page d'accueil -->
+            <div class="loader__loading-spinner"></div>
         </div>
+
+        <header>
+            <!-- Logo centré -->
+            <div>
+                <a href="">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <img class="logo" src="images/ohmyfood-logo.svg" alt="Logo"/>
+            </div>
+        </header>
+
+        <section class="presentation">
+            <!-- Section 1 : Localisation, titre et bouton "explorez" -->
+            <div class="presentation__location">
+                <form>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" placeholder="Paris, Belleville"/>
+                </form>
+            </div>
+            <div class="presentation__discover">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button class="presentation__discover__button" type="button">Explorer nos restaurants</button>
+            </div>
+        </section>
+
+        <section class="reservation">
+            <!-- Section 2 : Fonctionnement (liste numérotée) -->
+            <h2>Fonctionnement</h2>
+            <div class="reservation__steps">
+                <ol>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <h5>Choissisez un restaurant</h5> 
+                    </li>
+                    <li>
+                        <i class="fas fa-list"></i>
+                        <h5>Composez votre menu</h5>
+                    </li>
+                    <li>
+                        <i class="fas fa-store"></i>
+                        <h5>Dégustez au restaurant</h5>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <!-- Restaurants : chaque carte mène à la page du restaurant concerné -->
+            <h2>Restaurants</h2>
+            <div class="restaurants__results">
+                <figure class="card">
+                    <a href="">
+                        <div class="new">
+                            <p>Nouveau</p>
+                        </div>
+                        <img class="card__image" src="" alt="La Palette du goût"/>
+                    </a>
+                    <figcaption>
+                        <div class="card__infos">
+                            <h6>La palette du goût</h6>
+                            <p class="card__infos__location">Ménilmontant</p>
+                        </div>
+                        <button class="card__heart" type="button">
+                            <i class="far fa-heart"></i> <!-- Icône coeur vide -->
+                            <i class="fas fa-heart"></i> <!-- Icône coeur plein -->
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <footer>
+            <!-- Menu de navigation (liste à puces 4 liens) -->
+            <div class="footer-container">
+                <h3>ohmyfood</h3>
+                <nav class="footer-container__menu">
+                    <ul>
+                        <li>
+                            <i class="fas fa-utensils"></i>
+                            <a href="#">Proposer un restaurant</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-hands-helping"></i>
+                            <a href="#">Devenir partenaire</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
+        </footer>
     </body>
 </html>
