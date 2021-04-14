@@ -20,6 +20,13 @@
     }
 }
 
+@mixin container-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 // Buttons
 @mixin button-size{
     padding: 20px; 

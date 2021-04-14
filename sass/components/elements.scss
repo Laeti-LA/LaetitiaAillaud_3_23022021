@@ -1,0 +1,40 @@
+// Liste étapes fonctionnement réservation 
+.reservation__steps__step{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: map-get($map: $background-color, $key: light-color);
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-left: 15px;
+    box-shadow: 3px 5px 8px $shaddow-color;
+    .reservation__steps__step__icon{
+        padding-left: 45px;
+        color: grey;
+    }
+    .reservation__steps__step__title{
+        padding: 30px;
+    }   
+}
+
+ol {
+    list-style: none;
+    counter-reset: steps;
+  }
+  ol li {
+    counter-increment: steps;
+  }
+  ol li::before {
+    content: counter(steps);
+    color: white;
+    background: $primary-color;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -15px;
+  }
