@@ -124,6 +124,13 @@ header {
   }
 }
 
+@media screen and (min-width: 960px) {
+  body {
+    width: 95%;
+    margin: auto;
+  }
+}
+
 .radial-gradient-button {
   background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
   border-radius: 30px;
@@ -166,20 +173,20 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
+  width: 100%;
   padding-top: 45px;
-  padding-right: 30px;
   padding-bottom: 55px;
-  padding-left: 40px;
 }
 .presentation .presentation__discover .presentation__discover__title {
   font-size: 25px;
   font-weight: 700;
-  width: 70%;
+  width: 60%;
   text-align: center;
 }
 .presentation .presentation__discover .presentation__discover__text {
   text-align: center;
   margin-top: 20px;
+  width: 80%;
 }
 .presentation .presentation__discover .presentation__discover__button {
   margin-top: 30px;

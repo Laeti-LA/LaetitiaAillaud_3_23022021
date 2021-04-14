@@ -28,19 +28,19 @@
         flex-direction: column;
         align-items: center;
         background-color: map-get($map: $background-color, $key: light-color);
-        padding-top: 45px;
-        padding-right: 30px; 
+        width: 100%;
+        padding-top: 45px; 
         padding-bottom: 55px; 
-        padding-left: 40px;
         .presentation__discover__title{
             font-size: nth($list: $font-size, $n: 2);
             font-weight: nth($list: $font-weight, $n: 3);
-            width: 70%;
+            width: 60%;
             text-align: center;
         }
         .presentation__discover__text{
             text-align: center;
             margin-top: 20px;
+            width: 80%;
         }
         .presentation__discover__button{
             margin-top: 30px;
