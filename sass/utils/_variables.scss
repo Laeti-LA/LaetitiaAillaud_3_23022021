@@ -16,6 +16,7 @@ $font-weight: 400 500 700 900;
 
 // Breakpoints 
 $breakpoints:(
-    tablet: 600px,
+    tablet-min: 600px,
+    tablet-max: 959px,
     desktop: 960px,
 );

@@ -83,7 +83,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
   header {
     height: 96px;
   }
@@ -94,7 +94,7 @@ header {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
   .logo {
     transform: scale(1.5);
   }
@@ -111,7 +111,7 @@ header {
   top: 30px;
   left: 30px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
   .header-return {
     top: 45px;
     transform: scale(1.5);
@@ -160,6 +160,13 @@ header {
   margin-left: 15px;
   box-shadow: 3px 5px 8px #d1d1d1;
 }
+@media screen and (min-width: 960px) {
+  .reservation__steps__step {
+    justify-content: center;
+    height: 100px;
+    margin-top: 40px;
+  }
+}
 .reservation__steps__step .reservation__steps__step__icon {
   padding-left: 45px;
   color: grey;
@@ -172,9 +179,24 @@ ol {
   list-style: none;
   counter-reset: steps;
 }
+@media screen and (min-width: 960px) {
+  ol {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 ol li {
   counter-increment: steps;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+ol li:hover {
+  transform: scale(1.05);
+  background-color: #f2eafb;
+}
+ol li:hover .reservation__steps__step__icon {
+  color: #9356DC;
 }
 
 ol li::before {
@@ -189,6 +211,11 @@ ol li::before {
   align-items: center;
   position: absolute;
   margin-left: -15px;
+}
+@media screen and (min-width: 960px) {
+  ol li::before {
+    margin-top: -100px;
+  }
 }
 
 .header-return--welcome {
@@ -246,8 +273,18 @@ ol li::before {
   font-size: 25px;
   font-weight: 700;
 }
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .reservation .reservation__title {
+    width: 75%;
+  }
+}
 .reservation .reservation__steps {
   width: 90%;
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .reservation .reservation__steps {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

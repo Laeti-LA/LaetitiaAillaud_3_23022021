@@ -9,6 +9,11 @@
     margin-top: 25px;
     margin-left: 15px;
     box-shadow: 3px 5px 8px $shaddow-color;
+    @include desktop-only{
+        justify-content: center;
+        height: 100px;
+        margin-top: 40px;
+    }
     .reservation__steps__step__icon{
         padding-left: 45px;
         color: grey;
@@ -21,9 +26,23 @@
 ol {
     list-style: none;
     counter-reset: steps;
+    @include desktop-only{
+        display: flex;
+        flex-direction: row;
+    }
   }
   ol li {
     counter-increment: steps;
+    transform: scale(1);
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.05);
+        background-color: lighten($primary-color, $amount: 35%);
+        .reservation__steps__step__icon{
+            color: $primary-color;
+        }
+    }
+
   }
   ol li::before {
     content: counter(steps);
@@ -37,4 +56,10 @@ ol {
     align-items: center;
     position: absolute;
     margin-left: -15px;
+    @include desktop-only{
+    margin-top: -100px;
+    }
   }
+
+  
+  // Cartes-restaurants 
