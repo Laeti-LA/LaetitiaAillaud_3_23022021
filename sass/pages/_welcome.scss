@@ -1,0 +1,49 @@
+.header-return--welcome{
+    display: none;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .presentation__location{
+        background-color: map-get($map: $background-color, $key: medium-color);
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 5px 2px -2px $shaddow-color;
+        .presentation__location__icon{
+            margin-left: 30px;
+        }
+        .presentation__location__input{
+            width: 180px;
+            margin-left: 20px;
+        }
+    }
+    .presentation__discover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: map-get($map: $background-color, $key: light-color);
+        padding-top: 45px;
+        padding-right: 30px; 
+        padding-bottom: 55px; 
+        padding-left: 40px;
+        .presentation__discover__title{
+            font-size: nth($list: $font-size, $n: 2);
+            font-weight: nth($list: $font-weight, $n: 3);
+            width: 70%;
+            text-align: center;
+        }
+        .presentation__discover__text{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .presentation__discover__button{
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// Polices 
+@mixin title-font-family{
+    font-family: 'Shrikhand', cursive;
+}
+
+@mixin text-font-family{
+    font-family: 'Roboto', sans-serif;
+}
+
+// Media Queries
+@mixin tablet-only{
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin desktop-only{
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
+// Buttons
+@mixin button-size{
+    padding: 20px; 
+}
+
+@mixin button-text{
+    color: white;
+    font-size: nth($list: $font-size, $n: 1);
+    font-weight: nth($list: $font-weight, $n: 2);
+}

@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.title-font-family {
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  header {
+    height: 96px;
+  }
+}
+@media screen and (min-width: 960px) {
+  header {
+    height: 115px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    transform: scale(1.5);
+  }
+}
+@media screen and (min-width: 960px) {
+  .logo {
+    transform: scale(1.8);
+  }
+}
+
+.header-return {
+  color: black;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+@media screen and (min-width: 600px) {
+  .header-return {
+    top: 45px;
+    transform: scale(1.5);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header-return {
+    top: 54px;
+    transform: scale(1.8);
+  }
+}
+
+.radial-gradient-button {
+  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
+  border-radius: 30px;
+  border: none;
+  box-shadow: 3px 5px 8px #d1d1d1;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-return--welcome {
+  display: none;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation .presentation__location {
+  background-color: #eaeaea;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 5px 2px -2px #d1d1d1;
+}
+.presentation .presentation__location .presentation__location__icon {
+  margin-left: 30px;
+}
+.presentation .presentation__location .presentation__location__input {
+  width: 180px;
+  margin-left: 20px;
+}
+.presentation .presentation__discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding-top: 45px;
+  padding-right: 30px;
+  padding-bottom: 55px;
+  padding-left: 40px;
+}
+.presentation .presentation__discover .presentation__discover__title {
+  font-size: 25px;
+  font-weight: 700;
+  width: 70%;
+  text-align: center;
+}
+.presentation .presentation__discover .presentation__discover__text {
+  text-align: center;
+  margin-top: 20px;
+}
+.presentation .presentation__discover .presentation__discover__button {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

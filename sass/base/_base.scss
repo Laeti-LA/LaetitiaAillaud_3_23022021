@@ -1,0 +1,22 @@
+body{
+    @include text-font-family;
+    font-size: nth($list: $font-size, $n: 1);
+    font-weight: nth($list: $font-weight, $n: 1);
+}
+
+.title-font-family{
+    @include title-font-family;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    border: none;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    font-size: nth($list: $font-size, $n: 1);
+    font-weight: nth($list: $font-weight, $n: 2);
+}

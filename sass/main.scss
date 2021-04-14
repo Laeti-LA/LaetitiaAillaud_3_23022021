@@ -1,0 +1,10 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./vendors/vendors.scss";
+@import "./base/base";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/containers";
+@import "./components/buttons";
+@import "./pages/welcome";
+@import "./pages/restaurants";

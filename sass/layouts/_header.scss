@@ -1,0 +1,38 @@
+header{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablet-only{
+        height: 96px;
+    }
+    @include desktop-only{
+        height: 115px;
+    }
+}
+
+.logo{
+    @include tablet-only{
+        transform: scale(1.5);
+    }
+    @include desktop-only{
+        transform: scale(1.8);
+    }
+}
+
+.header-return{
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    @include tablet-only{
+        top: 45px;
+        transform: scale(1.5);
+    }
+    @include desktop-only{
+        top: 54px;
+        transform: scale(1.8);
+    }
+}
