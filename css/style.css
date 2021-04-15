@@ -110,7 +110,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
   header {
     height: 96px;
   }
@@ -121,7 +121,7 @@ header {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
   .logo {
     transform: scale(1.5);
   }
@@ -138,7 +138,7 @@ header {
   top: 30px;
   left: 30px;
 }
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
   .header-return {
     top: 45px;
     transform: scale(1.5);
@@ -151,11 +151,58 @@ header {
   }
 }
 
-@media screen and (min-width: 960px) {
-  body {
-    width: 95%;
-    margin: auto;
+.footer-container {
+  background-color: #353535;
+  color: white;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.footer-container a {
+  color: white;
+  font-size: 16px;
+}
+.footer-container .footer-container__title {
+  width: 90%;
+  font-size: 25px;
+  padding-bottom: 27px;
+}
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
+  .footer-container .footer-container__title {
+    width: 85%;
   }
+}
+.footer-container .footer-container__menu {
+  width: 90%;
+}
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
+  .footer-container .footer-container__menu {
+    width: 85%;
+  }
+}
+.footer-container .footer-container__menu .footer__icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+@media screen and (min-width: 960px) {
+  .footer-container .footer-container__menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer-container__menu ul {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+  }
+}
+
+.footer-container__menu ul li {
+  margin-bottom: 10px;
 }
 
 .container {
@@ -219,6 +266,7 @@ ol {
   ol {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     column-gap: 20px;
   }
 }
@@ -399,9 +447,9 @@ ol li::before {
 .container__child {
   width: 90%;
 }
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
   .container__child {
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -413,7 +461,7 @@ ol li::before {
 .restaurants .restaurants__title {
   padding-bottom: 10px;
 }
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959.99px) {
   .restaurants .restaurants__results {
     display: flex;
     flex-direction: row;

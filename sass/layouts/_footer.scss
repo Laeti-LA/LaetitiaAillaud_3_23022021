@@ -1,0 +1,41 @@
+.footer-container{
+    background-color: map-get($map: $background-color, $key: dark-color);
+    color: white;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    a{
+        color: white;
+        font-size: nth($list: $font-size, $n: 1);
+    }
+    .footer-container__title{
+        @include container-box-child;
+        font-size: nth($list: $font-size, $n: 3);
+        padding-bottom: 27px;
+    }
+    .footer-container__menu{
+        @include container-box-child;
+        .footer__icon{
+            font-size: nth($list: $font-size, $n: 1);
+            margin-right: 5px;
+        }
+        @include desktop-only{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.footer-container__menu ul{
+    @include desktop-only{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 30px;
+    }
+}
+
+.footer-container__menu ul li{
+    margin-bottom: 10px;
+}
