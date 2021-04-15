@@ -68,6 +68,7 @@ ol {
       background-color: white;
       border-radius: 20px;
       box-shadow: 3px 5px 8px $shaddow-color;
+      margin-top: 20px;
       .card__top{
           display: flex;
           flex-direction: column;
@@ -130,9 +131,12 @@ ol {
                 z-index:2;
                 opacity: 1;
                 transition: opacity 400ms;
-                &:hover{
+                &:active{
                     opacity: 0;
 
+                }
+                &:hover{
+                    opacity: 0;
                 }
               }
           }    

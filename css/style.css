@@ -259,6 +259,7 @@ ol li::before {
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 5px 8px #d1d1d1;
+  margin-top: 20px;
 }
 .card .card__top {
   display: flex;
@@ -326,6 +327,9 @@ ol li::before {
   z-index: 2;
   opacity: 1;
   transition: opacity 400ms;
+}
+.card .card__legend .card__legend__heart .card__legend__heart__icone--empty:active {
+  opacity: 0;
 }
 .card .card__legend .card__legend__heart .card__legend__heart__icone--empty:hover {
   opacity: 0;
@@ -397,7 +401,7 @@ ol li::before {
 }
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .container__child {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -408,6 +412,28 @@ ol li::before {
 }
 .restaurants .restaurants__title {
   padding-bottom: 10px;
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .restaurants .restaurants__results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restaurants .restaurants__results .card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .restaurants .restaurants__results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restaurants .restaurants__results .card {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
