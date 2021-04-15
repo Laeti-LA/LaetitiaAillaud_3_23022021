@@ -5,6 +5,9 @@
     box-shadow: 3px 5px 8px $shaddow-color;
     @include button-size;
     @include button-text;
+    @include desktop-only{
+        font-size: nth($list: $font-size-desktop, $n: 2);
+    }
     &:hover{
         box-shadow: 3px 5px 8px darken($shaddow-color, 20%);
         opacity: 0.7;

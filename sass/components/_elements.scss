@@ -67,12 +67,20 @@ ol {
   .card{
       background-color: white;
       border-radius: 20px;
+      box-shadow: 3px 5px 8px $shaddow-color;
       .card__top{
           display: flex;
           flex-direction: column;
           align-items: flex-end;
           .card__top__new{
               background-color: $tertiary-color;
+              border-radius: 2px;
+              font-size: nth($list: $font-size, $n: 1);
+              font-weight: 600;
+              color: darken($tertiary-color, 45%);
+              @include desktop-only{
+                  font-size: nth($list: $font-size-desktop, $n: 1);
+              }
               padding: 10px;
               position: absolute;
               margin-top: 15px;
@@ -80,7 +88,7 @@ ol {
           }
           .card__top__image{
             width: 100%;
-            height: 250px;
+            height: 225px;
             object-fit: cover;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
@@ -92,6 +100,41 @@ ol {
           justify-content: space-between;
           .card__legend__infos__title{
               font-weight: nth($list: $font-weight, $n: 3);
+              padding-left: 15px;
+              padding-top: 20px; 
+              padding-bottom: 5px; 
           }
+          .card__legend__infos__location{
+              padding-left: 15px;
+              padding-top: 5px; 
+              padding-bottom: 20px;
+          }
+          .card__legend__heart{
+              display: flex;
+              justify-content: flex-end;
+              margin-top: 20px;
+              margin-right: 15px;
+              .card__legend__heart__icone{
+                font-size: 30px;
+                position: absolute;
+              }
+              .card__legend__heart__icone--full{
+                background:$radial-gradient;
+                background-clip:text;
+                -webkit-background-clip:text;
+                color:transparent;
+                z-index: 1;
+              }
+              .card__legend__heart__icone--empty{
+                background-color: white;
+                z-index:2;
+                opacity: 1;
+                transition: opacity 400ms;
+                &:hover{
+                    opacity: 0;
+
+                }
+              }
+          }    
       }
   }

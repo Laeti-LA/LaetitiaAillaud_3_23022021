@@ -5,10 +5,10 @@
 
 // Taille police titres des sections de la home page
 .home-title{
-    font-size: nth($list: $font-size, $n: 2);
+    font-size: nth($list: $font-size, $n: 3);
     font-weight: nth($list: $font-weight, $n: 3);
     @include desktop-only{
-        font-size: nth($list: $font-size-desktop, $n: 2);
+        font-size: nth($list: $font-size-desktop, $n: 3);
     }
 }
 

@@ -41,6 +41,6 @@
 
 @mixin button-text{
     color: white;
-    font-size: nth($list: $font-size, $n: 1);
+    font-size: nth($list: $font-size, $n: 2);
     font-weight: nth($list: $font-weight, $n: 2);
 }
