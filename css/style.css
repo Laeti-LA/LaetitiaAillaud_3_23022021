@@ -57,6 +57,11 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+}
 
 .title-font-family {
   font-family: "Shrikhand", cursive;
@@ -64,6 +69,15 @@ body {
 
 a {
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 960px) {
+  a {
+    font-size: 16px;
+  }
 }
 
 input {
@@ -73,6 +87,19 @@ input {
   outline: none;
   font-size: 20px;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 960px) {
+  input {
+    font-size: 16px;
+  }
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: none;
+  outline: none;
 }
 
 header {
@@ -187,6 +214,7 @@ ol {
   ol {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
   }
 }
 
@@ -196,7 +224,7 @@ ol li {
   transition: transform 300ms;
 }
 ol li:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   background-color: #f2eafb;
 }
 ol li:hover .reservation__steps__step__icon {
@@ -222,8 +250,50 @@ ol li::before {
   }
 }
 
+.card {
+  background-color: white;
+  border-radius: 20px;
+}
+.card .card__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card .card__top .card__top__new {
+  background-color: #99E2D0;
+  padding: 10px;
+  position: absolute;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.card .card__top .card__top__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card .card__legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card .card__legend .card__legend__infos__title {
+  font-weight: 700;
+}
+
 .header-return--welcome {
   display: none;
+}
+
+.home-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+@media screen and (min-width: 960px) {
+  .home-title {
+    font-size: 20px;
+  }
 }
 
 .presentation .presentation__location {
@@ -253,8 +323,6 @@ ol li::before {
   padding-bottom: 55px;
 }
 .presentation .presentation__discover .presentation__discover__title {
-  font-size: 25px;
-  font-weight: 700;
   width: 60%;
   text-align: center;
 }
@@ -272,23 +340,25 @@ ol li::before {
   padding-bottom: 70px;
 }
 .reservation .reservation__title {
-  width: 90%;
   padding-bottom: 10px;
-  font-size: 25px;
-  font-weight: 700;
 }
-@media screen and (min-width: 600px) and (max-width: 959px) {
-  .reservation .reservation__title {
-    width: 75%;
-  }
-}
-.reservation .reservation__steps {
+
+.container__child {
   width: 90%;
 }
 @media screen and (min-width: 600px) and (max-width: 959px) {
-  .reservation .reservation__steps {
+  .container__child {
     width: 75%;
   }
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+.restaurants .restaurants__title {
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

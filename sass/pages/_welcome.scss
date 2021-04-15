@@ -3,6 +3,15 @@
     display: none;
 }
 
+// Taille police titres des sections de la home page
+.home-title{
+    font-size: nth($list: $font-size, $n: 2);
+    font-weight: nth($list: $font-weight, $n: 3);
+    @include desktop-only{
+        font-size: nth($list: $font-size-desktop, $n: 2);
+    }
+}
+
 // Section 1 : Présentation/Localisation
 .presentation{
     .presentation__location{
@@ -28,8 +37,6 @@
         padding-top: 45px; 
         padding-bottom: 55px; 
         .presentation__discover__title{
-            font-size: nth($list: $font-size, $n: 2);
-            font-weight: nth($list: $font-weight, $n: 3);
             width: 60%;
             text-align: center;
         }
@@ -49,20 +56,20 @@
     padding-top: 50px;
     padding-bottom: 70px;
     .reservation__title{
-        width: 90%;
         padding-bottom: 10px;
-        font-size: nth($list: $font-size, $n: 2);
-        font-weight: nth($list: $font-weight, $n: 3);
-        @include tablet-only{
-            width: 75%;
-        }
-    }
-    .reservation__steps{
-        width: 90%;
-        @include tablet-only{
-            width: 75%;
-        }
     }
 }
 
+.container__child{
+    @include container-box-child;
+}
+
 // Section 3 : Liste des restaurants 
+.restaurants{
+    background-color: map-get($map: $background-color, $key: light-color);
+    padding-top: 60px; 
+    padding-bottom: 65px; 
+    .restaurants__title{
+        padding-bottom: 10px;
+    }
+}

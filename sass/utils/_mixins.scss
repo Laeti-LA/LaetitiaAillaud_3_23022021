@@ -27,6 +27,13 @@
     width: 100%;
 }
 
+@mixin container-box-child{
+    width: 90%;
+    @include tablet-only{
+        width: 75%;
+    }
+}
+
 // Buttons
 @mixin button-size{
     padding: 20px; 

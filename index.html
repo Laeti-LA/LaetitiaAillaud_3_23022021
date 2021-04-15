@@ -40,7 +40,7 @@
                 </form>
             </div>
             <div class="presentation__discover">
-                <h1 class="presentation__discover__title">Réservez le menu qui vous convient</h1>
+                <h1 class="presentation__discover__title home-title">Réservez le menu qui vous convient</h1>
                 <p class="presentation__discover__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="presentation__discover__button radial-gradient-button" type="button">Explorer nos restaurants</button>
             </div>
@@ -48,8 +48,8 @@
 
         <section class=" container reservation">
             <!-- Section 2 : Fonctionnement (liste numérotée) -->
-            <h2 class="reservation__title">Fonctionnement</h2>
-            <div class="reservation__steps">
+            <h2 class="reservation__title home-title container__child">Fonctionnement</h2>
+            <div class="reservation__steps container__child">
                 <ol>
                     <li class="reservation__steps__step">
                         <i class="reservation__steps__step__icon fas fa-mobile-alt"></i>
@@ -69,23 +69,27 @@
 
         <section class="container restaurants">
             <!-- Restaurants : chaque carte mène à la page du restaurant concerné -->
-            <h2>Restaurants</h2>
-            <div class="restaurants__results">
+            <h2 class="restaurants__title home-title container__child">Restaurants</h2>
+            <div class="restaurants__results container__child">
                 <figure class="card">
                     <a href="">
-                        <div class="new">
-                            <p>Nouveau</p>
+                        <div class="card__top">
+                            <div class="card__top__new">
+                                <p>Nouveau</p>
+                            </div>
+                            <img class="card__top__image" src="images/la-palette-du-gout.jpg" alt="La Palette du goût"/>
                         </div>
-                        <img class="card__image" src="" alt="La Palette du goût"/>
                     </a>
-                    <figcaption>
-                        <div class="card__infos">
-                            <h6>La palette du goût</h6>
-                            <p class="card__infos__location">Ménilmontant</p>
-                        </div>
-                        <button class="card__heart" type="button">
-                            <i class="far fa-heart"></i> <!-- Icône coeur vide -->
-                            <i class="fas fa-heart"></i> <!-- Icône coeur plein -->
+                    <figcaption class="card__legend">
+                        <a href="">
+                            <div class="card__legend__infos">
+                                <h6 class="card__legend__infos__title">La palette du goût</h6>
+                                <p class="card__legend__infos__location">Ménilmontant</p>
+                            </div>
+                        </a>
+                        <button class="card__legend__heart" type="button">
+                            <i class="card__legend__heart__icone card__legend__heart__icone--empty far fa-heart"></i> <!-- Icône coeur vide -->
+                            <i class="card__legend__heart__icone card__legend__heart__icone--full fas fa-heart"></i> <!-- Icône coeur plein -->
                         </button>
                     </figcaption>
                 </figure>

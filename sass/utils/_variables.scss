@@ -3,6 +3,8 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
+$radial-gradient: radial-gradient(at 30% 10%, $secondary-color, $primary-color);
+
 $background-color:(
     medium-color: rgb(234, 234, 234),
     light-color: rgb(246, 246, 246)
@@ -13,6 +15,7 @@ $shaddow-color: darken(map-get($map: $background-color, $key: medium-color), 10%
 //Taille police 
 $font-size: 20px 25px;
 $font-weight: 400 500 700 900;
+$font-size-desktop: 16px 20px;
 
 // Breakpoints 
 $breakpoints:(

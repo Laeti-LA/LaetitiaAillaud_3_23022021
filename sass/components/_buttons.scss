@@ -1,5 +1,5 @@
 .radial-gradient-button{
-    background: radial-gradient(at 30% 10%, $secondary-color, $primary-color);
+    background: $radial-gradient;
     border-radius: 30px;
     border: none;
     box-shadow: 3px 5px 8px $shaddow-color;

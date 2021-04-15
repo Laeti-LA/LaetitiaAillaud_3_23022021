@@ -2,6 +2,9 @@ body{
     @include text-font-family;
     font-size: nth($list: $font-size, $n: 1);
     font-weight: nth($list: $font-weight, $n: 1);
+    @include desktop-only{
+        font-size: nth($list: $font-size-desktop, $n: 1);
+    }
 }
 
 .title-font-family{
@@ -10,6 +13,13 @@ body{
 
 a{
     text-decoration: none;
+    font-size: nth($list: $font-size, $n: 1);
+    font-weight: nth($list: $font-weight, $n: 2);
+    color:black;
+    @include text-font-family;
+    @include desktop-only{
+        font-size: nth($list: $font-size-desktop, $n: 1);
+    }
 }
 
 input{
@@ -19,4 +29,16 @@ input{
     outline: none;
     font-size: nth($list: $font-size, $n: 1);
     font-weight: nth($list: $font-weight, $n: 2);
+    @include text-font-family;
+    @include desktop-only{
+        font-size: nth($list: $font-size-desktop, $n: 1);
+    }
 }
+
+button{
+    border: none;
+    text-decoration: none;
+    background: none;
+    outline: none;
+}
+
