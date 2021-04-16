@@ -8,7 +8,7 @@
     border-radius: 30px;
     margin-top: 25px;
     margin-left: 15px;
-    box-shadow: 3px 5px 8px $shaddow-color;
+    @include shadow;
     @include desktop-only{
         justify-content: center;
         height: 100px;
@@ -40,6 +40,8 @@ ol {
     &:hover {
         transform: scale(1.01);
         background-color: lighten($primary-color, $amount: 35%);
+        @include shadow-darken;
+        @include pointer;
         .reservation__steps__step__icon{
             color: $primary-color;
         }
@@ -68,8 +70,11 @@ ol {
   .card{
       background-color: white;
       border-radius: 20px;
-      box-shadow: 3px 5px 8px $shaddow-color;
+      @include shadow;
       margin-top: 20px;
+      &:hover{
+        @include shadow-darken;
+      }
       .card__top{
           display: flex;
           flex-direction: column;
@@ -112,34 +117,8 @@ ol {
               padding-bottom: 20px;
           }
           .card__legend__heart{
-              display: flex;
-              justify-content: flex-end;
               margin-top: 20px;
-              margin-right: 15px;
-              .card__legend__heart__icone{
-                font-size: 30px;
-                position: absolute;
-              }
-              .card__legend__heart__icone--full{
-                background:$radial-gradient;
-                background-clip:text;
-                -webkit-background-clip:text;
-                color:transparent;
-                z-index: 1;
-              }
-              .card__legend__heart__icone--empty{
-                background-color: white;
-                z-index:2;
-                opacity: 1;
-                transition: opacity 400ms;
-                &:active{
-                    opacity: 0;
-
-                }
-                &:hover{
-                    opacity: 0;
-                }
-              }
+              margin-right: 15px;            
           }    
       }
   }

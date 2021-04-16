@@ -229,7 +229,40 @@ header {
 }
 .radial-gradient-button:hover {
   box-shadow: 3px 5px 8px #9e9e9e;
+  cursor: pointer;
   opacity: 0.7;
+}
+
+.card__legend__heart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__legend__heart__icone {
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.card__legend__heart__icone--full {
+  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+}
+
+.card__legend__heart__icone--empty {
+  background-color: white;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.card__legend__heart__icone--empty:active {
+  opacity: 0;
+}
+.card__legend__heart__icone--empty:hover {
+  opacity: 0;
 }
 
 .reservation__steps__step {
@@ -279,6 +312,8 @@ ol li {
 ol li:hover {
   transform: scale(1.01);
   background-color: #f2eafb;
+  box-shadow: 3px 5px 8px #9e9e9e;
+  cursor: pointer;
 }
 ol li:hover .reservation__steps__step__icon {
   color: #9356DC;
@@ -308,6 +343,9 @@ ol li::before {
   border-radius: 20px;
   box-shadow: 3px 5px 8px #d1d1d1;
   margin-top: 20px;
+}
+.card:hover {
+  box-shadow: 3px 5px 8px #9e9e9e;
 }
 .card .card__top {
   display: flex;
@@ -354,37 +392,8 @@ ol li::before {
   padding-bottom: 20px;
 }
 .card .card__legend .card__legend__heart {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 20px;
   margin-right: 15px;
-}
-.card .card__legend .card__legend__heart .card__legend__heart__icone {
-  font-size: 30px;
-  position: absolute;
-}
-.card .card__legend .card__legend__heart .card__legend__heart__icone--full {
-  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  z-index: 1;
-}
-.card .card__legend .card__legend__heart .card__legend__heart__icone--empty {
-  background-color: white;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 400ms;
-}
-.card .card__legend .card__legend__heart .card__legend__heart__icone--empty:active {
-  opacity: 0;
-}
-.card .card__legend .card__legend__heart .card__legend__heart__icone--empty:hover {
-  opacity: 0;
-}
-
-.header-return--welcome {
-  display: none;
 }
 
 .home-title {
@@ -482,6 +491,10 @@ ol li::before {
   .restaurants .restaurants__results .card {
     width: 30%;
   }
+}
+
+.header-return--page {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

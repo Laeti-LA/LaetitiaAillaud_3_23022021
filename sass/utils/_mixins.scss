@@ -44,3 +44,15 @@
     font-size: nth($list: $font-size, $n: 2);
     font-weight: nth($list: $font-weight, $n: 2);
 }
+
+@mixin pointer{
+    cursor: pointer;
+}
+
+// Ombres 
+@mixin shadow{
+    box-shadow: 3px 5px 8px $shaddow-color;
+}
+@mixin shadow-darken{
+    box-shadow: 3px 5px 8px darken($shaddow-color, 20%);
+}
