@@ -16,10 +16,10 @@
         <!-- Page restaurant -->
 
         <header>
-            <!-- Logo centré -->
+            <!-- Logo centré + icone flèche retour à la page d'accueil -->
             <div>
-                <a href="">
-                    <span class="header-return header-return--welcome">
+                <a href="index.html">
+                    <span class="header-return">
                         <i class="fas fa-arrow-left"></i>
                     </span>
                 </a>
@@ -27,7 +27,68 @@
             </div>
         </header>
 
-
+        <section class="restaurant container">
+            <div class="restaurant__header">
+                <img class="restaurant__header__image" src="images/la-palette-du-gout.jpg" alt="La Palette du goût"/>
+            </div>
+            <div class="restaurant__menu container">
+                <div class="restaurant__title container__child">
+                    <h2 class="title-font-family">La palette du goût</h2>
+                    <button class="restaurant__heart" type="button">
+                        <i class="restaurant__heart__icone restaurant__heart__icone--full fas fa-heart"></i> <!-- Icône coeur plein -->
+                        <i class="restaurant__heart__icone restaurant__heart__icone--empty far fa-heart"></i> <!-- Icône coeur vide -->
+                    </button>
+                </div>
+                <div class="restaurant__menu__content container__child">
+                    <article class="menu__starters">
+                        <h3 class="menu__courses__title"><span class="underline">ENTR</span>EES</h3>
+                        <ul class="menu__courses__list">
+                            <li class="menu__courses--one stater starter--one">
+                                <div class="courses__info">
+                                    <h5 class="courses__info--title">Fricassée d'escargot</h5>
+                                    <p class="courses__info--details">Au piment d'Espelette</p>
+                                </div>
+                                <div class="courses__info--price">
+                                    <span class="price">25€</span>
+                                </div>
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="menu__courses--two stater starter--two">
+                                <div class="courses__info">
+                                    <h5 class="courses__info--title">Foie gras de canard mi-cuit</h5>
+                                    <p class="courses__info--details">Et ses copeaux de truffe noire</p>
+                                </div>
+                                <div class="courses__info--price">
+                                    <span class="price">35€</span>
+                                </div>
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="menu__courses--three stater starter--three">
+                                <div class="courses__info">
+                                    <h5 class="courses__info--title">Oeuf au plat</h5>
+                                    <p class="courses__info--details">Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <div class="courses__info--price">
+                                    <span class="price">20€</span>
+                                </div>
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu__main-courses"></article>
+                    <article class="menu__desserts"></article>
+                </div>
+                <div>
+                    <button class="presentation__discover__button radial-gradient-button" type="button">Commander</button>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <!-- Menu de navigation (liste à puces 4 liens) -->

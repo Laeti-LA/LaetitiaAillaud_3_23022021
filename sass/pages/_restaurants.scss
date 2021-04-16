@@ -1,4 +1,59 @@
-//Header 
-.header-return--page{
-    display: flex;
+.restaurant__header__image{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
+
+.restaurant__menu{
+    position: relative;
+    margin-top: -40px;
+    background-color: map-get($map: $background-color, $key: light-color);
+    border-radius: 40px 40px 0 0;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    .restaurant__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: nth($list: $font-size, $n: 3);
+        .restaurant__heart{
+            margin-right: 20px;
+        }
+        @include desktop-only{
+            justify-content: center;
+            font-size: nth($list: $font-size-desktop, $n: 3);
+            .restaurant__heart{
+                margin-left: 20px;
+            }
+        }
+    }
+    .restaurant__menu__content{
+        padding-top: 45px;
+        padding-bottom: 40px;
+        .menu__courses__title{
+            .underline{
+                border-bottom: 4px solid $tertiary-color;
+                padding-bottom: 5px;
+            }
+        }
+        li{
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px; 
+            padding-bottom: 15px;
+        }
+    }
+}
+
+
+
+
+
+

@@ -265,6 +265,35 @@ header {
   opacity: 0;
 }
 
+.restaurant__heart {
+  display: flex;
+  align-items: center;
+}
+.restaurant__heart .restaurant__heart__icone {
+  font-size: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+.restaurant__heart .restaurant__heart__icone--full {
+  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+}
+.restaurant__heart .restaurant__heart__icone--empty {
+  background-color: #f6f6f6;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.restaurant__heart .restaurant__heart__icone--empty:active {
+  opacity: 0;
+}
+.restaurant__heart .restaurant__heart__icone--empty:hover {
+  opacity: 0;
+}
+
 .reservation__steps__step {
   display: flex;
   flex-direction: row;
@@ -402,7 +431,7 @@ ol li::before {
 }
 @media screen and (min-width: 960px) {
   .home-title {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -493,8 +522,58 @@ ol li::before {
   }
 }
 
-.header-return--page {
+.restaurant__header__image {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.restaurant__menu {
+  position: relative;
+  margin-top: -40px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.restaurant__menu .restaurant__title {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.restaurant__menu .restaurant__title .restaurant__heart {
+  margin-right: 20px;
+}
+@media screen and (min-width: 960px) {
+  .restaurant__menu .restaurant__title {
+    justify-content: center;
+    font-size: 30px;
+  }
+  .restaurant__menu .restaurant__title .restaurant__heart {
+    margin-left: 20px;
+  }
+}
+.restaurant__menu .restaurant__menu__content {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+.restaurant__menu .restaurant__menu__content .menu__courses__title .underline {
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 5px;
+}
+.restaurant__menu .restaurant__menu__content li {
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

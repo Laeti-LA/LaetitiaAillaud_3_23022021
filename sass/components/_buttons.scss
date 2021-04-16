@@ -15,7 +15,7 @@
     }
 }
 
-// Bouton coeur
+// Bouton coeur Page d'accueil
 .card__legend__heart{
     display: flex;
     justify-content: flex-end;           
@@ -45,3 +45,36 @@
         opacity: 0;
     }
   }
+
+  // Bouton coeur page restaurant 
+
+.restaurant__heart{
+    display: flex;
+    align-items: center;
+    .restaurant__heart__icone{
+        font-size: 25px;
+        position: absolute;
+        @include pointer;
+      }
+      .restaurant__heart__icone--full{
+        background:$radial-gradient;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+        z-index: 1;
+      }
+      .restaurant__heart__icone--empty{
+        background-color: map-get($map: $background-color, $key: light-color);
+        z-index:2;
+        opacity: 1;
+        transition: opacity 400ms;
+        &:active{
+            opacity: 0;
+    
+        }
+        &:hover{
+            opacity: 0;
+        }
+      }
+}
+  
