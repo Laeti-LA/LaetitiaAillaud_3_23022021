@@ -32,27 +32,71 @@
     .restaurant__menu__content{
         padding-top: 45px;
         padding-bottom: 40px;
-        .menu__courses__title{
+        .menu__dishes__title{
             .underline{
                 border-bottom: 4px solid $tertiary-color;
                 padding-bottom: 5px;
             }
         }
-        li{
-            background-color: white;
-            border-radius: 30px;
-            margin-top: 15px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 15px; 
-            padding-bottom: 15px;
+        ul{
+            margin-top: 30px;
+            margin-bottom: 40px;
+            li{
+                background-color: white;
+                border-radius: 20px;
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                @include shadow;
+                &:hover{
+                    @include shadow-darken
+                }
+                .dish__info{
+                    margin:  12px 15px 12px 15px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    width: 100%;
+                    .dish__info-bloc{
+                        .dish__info--title{
+                            font-weight: nth($list: $font-weight, $n: 3);
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        .dish__info--details{
+                            font-size: nth($list: $font-size, $n: 1);
+                            padding-top: 10px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .dish__info--price{
+                        justify-self: flex-end;
+                        align-self: flex-end;
+                        font-size: nth($list: $font-size, $n: 1);
+                        font-weight: nth($list: $font-weight, $n: 3);
+                    }
+                }
+                .menu__checkbox{
+                    .menu__checkbox--icon{
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }
 
-
+.menu__order-button{
+    button{
+        width: 100px;
+    }
+}
 
 
 
