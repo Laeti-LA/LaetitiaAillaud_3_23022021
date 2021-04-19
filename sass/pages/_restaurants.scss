@@ -32,6 +32,15 @@
     .restaurant__menu__content{
         padding-top: 45px;
         padding-bottom: 40px;
+        @include desktop-only{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            article{
+                width: 32%;
+            }
+        }
         .menu__dishes__title{
             .underline{
                 border-bottom: 4px solid $tertiary-color;
@@ -49,6 +58,10 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                @include desktop-only{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
                 @include shadow;
                 &:hover{
                     @include shadow-darken
@@ -60,7 +73,11 @@
                     justify-content: space-between;
                     align-items: flex-end;
                     width: 100%;
+                    @include desktop-only{
+                        margin: 12px 0 12px 0;
+                    }
                     .dish__info-bloc{
+                        overflow: hidden;
                         .dish__info--title{
                             font-weight: nth($list: $font-weight, $n: 3);
                             white-space: nowrap;
@@ -92,11 +109,6 @@
     }
 }
 
-.menu__order-button{
-    button{
-        width: 100px;
-    }
-}
 
 
 
