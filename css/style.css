@@ -638,4 +638,101 @@ ol li::before {
   color: white;
 }
 
+@keyframes menu-loader {
+  10% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.starter--one {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.starter--two {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.starter--three {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.main-courses--one {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+@media screen and (min-width: 960px) {
+  .main-courses--one {
+    animation-delay: 0.5s;
+  }
+}
+
+.main-courses--two {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 0.9s;
+}
+@media screen and (min-width: 960px) {
+  .main-courses--two {
+    animation-delay: 0.7s;
+  }
+}
+
+.main-courses--three {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 1.1s;
+}
+@media screen and (min-width: 960px) {
+  .main-courses--three {
+    animation-delay: 0.9s;
+  }
+}
+
+.dessert--one {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 1.3s;
+}
+@media screen and (min-width: 960px) {
+  .dessert--one {
+    animation-delay: 0.9s;
+  }
+}
+
+.dessert--two {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 1.5s;
+}
+@media screen and (min-width: 960px) {
+  .dessert--two {
+    animation-delay: 1.1s;
+  }
+}
+
+.dessert--three {
+  opacity: 0;
+  animation: menu-loader 1s ease-out forwards;
+  animation-delay: 1.7s;
+}
+@media screen and (min-width: 960px) {
+  .dessert--three {
+    animation-delay: 1.3s;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
