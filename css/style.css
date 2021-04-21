@@ -228,7 +228,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: -1;
   opacity: 0;
   animation: loader-background 3000ms ease-out;
 }
@@ -236,12 +236,14 @@ header {
 @keyframes loader-background {
   0% {
     opacity: 0.98;
+    z-index: 2;
   }
   70% {
     opacity: 0.98;
   }
   100% {
     opacity: 0;
+    z-index: 2;
   }
 }
 .loader__spiner {
@@ -398,7 +400,7 @@ header {
 .egg--two {
   position: absolute;
   margin-top: 6px;
-  animation: egg-spinner 2700ms;
+  animation: egg-spinner 2700ms forwards;
 }
 
 @keyframes egg-spinner {
@@ -406,7 +408,7 @@ header {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(3turn);
+    transform: rotate(2.5turn);
   }
 }
 @keyframes bell-spinner {
