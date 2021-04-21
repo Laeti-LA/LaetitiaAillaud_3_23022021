@@ -23,6 +23,7 @@
         }
         @include desktop-only{
             justify-content: center;
+            gap: 25px;
             font-size: nth($list: $font-size-desktop, $n: 3);
             .restaurant__heart{
                 margin-left: 20px;

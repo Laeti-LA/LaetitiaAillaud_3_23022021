@@ -266,33 +266,50 @@ header {
   opacity: 0;
 }
 
-.restaurant__heart {
+.heart button {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: auto;
+}
+
+.restaurant__title__heart {
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
-.restaurant__heart .restaurant__heart__icone {
-  font-size: 25px;
-  position: absolute;
-  cursor: pointer;
-}
-.restaurant__heart .restaurant__heart__icone--full {
-  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
-  background-clip: text;
+
+.heart-btn {
+  background: linear-gradient(200deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart-btn--one {
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  -webkit-text-stroke-width: 1px;
   z-index: 1;
+  transition: all 300ms ease-out;
 }
-.restaurant__heart .restaurant__heart__icone--empty {
-  background-color: #f6f6f6;
-  z-index: 2;
+.heart-btn--one:hover {
+  background-position: center center;
+}
+.heart-btn--one:hover:hover + .heart-btn--two {
   opacity: 1;
-  transition: opacity 400ms;
+  z-index: 2;
 }
-.restaurant__heart .restaurant__heart__icone--empty:active {
+
+.heart-btn--two {
+  font-size: 27px;
+  position: absolute;
+  top: -1px;
+  z-index: 0;
   opacity: 0;
-}
-.restaurant__heart .restaurant__heart__icone--empty:hover {
-  opacity: 0;
+  transition-property: all;
+  transition-delay: 300ms;
 }
 
 .reservation__steps__step {
@@ -551,6 +568,7 @@ ol li::before {
 @media screen and (min-width: 960px) {
   .restaurant__menu .restaurant__title {
     justify-content: center;
+    gap: 25px;
     font-size: 30px;
   }
   .restaurant__menu .restaurant__title .restaurant__heart {
