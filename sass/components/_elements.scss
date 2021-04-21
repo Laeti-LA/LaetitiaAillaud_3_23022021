@@ -105,6 +105,7 @@ ol {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          align-items: flex-start;
           .card__legend__infos__title{
               font-weight: nth($list: $font-weight, $n: 3);
               padding-left: 15px;

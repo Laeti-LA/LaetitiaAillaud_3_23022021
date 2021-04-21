@@ -1,6 +1,6 @@
 .radial-gradient-button{
     min-width: 180px;
-    background: $radial-gradient;
+    background: $linear-gradient-btn;
     border-radius: 30px;
     border: none;
     @include shadow;
@@ -16,39 +16,8 @@
     }
 }
 
-// Bouton coeur Page d'accueil
-.card__legend__heart{
-    display: flex;
-    justify-content: flex-end;          
-}  
-.card__legend__heart__icone{
-    font-size: 30px;
-    position: absolute;
-    @include pointer;
-  }
-.card__legend__heart__icone--full{
-    background:$radial-gradient;
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-    z-index: 1;
-  }
-  .card__legend__heart__icone--empty{
-    background-color: white;
-    z-index:2;
-    opacity: 1;
-    transition: opacity 400ms;
-    &:active{
-        opacity: 0;
 
-    }
-    &:hover{
-        opacity: 0;
-    }
-  }
-
-  // Bouton coeur page restaurant 
-
+// Bouton coeur 
 .heart button{
   outline: none;
   border: none;
@@ -56,14 +25,14 @@
   width: auto;
 }
 
-.restaurant__title__heart{
+.heart{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 .heart-btn{
-  background: linear-gradient(200deg, #9356dc, #ff79da);
+  background: $linear-gradient-heart;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -80,6 +49,7 @@
     &:hover + .heart-btn--two{
       opacity: 1;
       z-index: 2;
+      transform: scale(1.2);
     }
   }
 }
@@ -90,6 +60,8 @@
   top: -1px;
   z-index: 0;
   opacity: 0;
+  transform: scale(1);
   transition-property: all;
   transition-delay: 300ms;
 }
+

@@ -214,7 +214,7 @@ header {
 
 .radial-gradient-button {
   min-width: 180px;
-  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
   border-radius: 30px;
   border: none;
   box-shadow: 3px 5px 8px #d1d1d1;
@@ -234,38 +234,6 @@ header {
   opacity: 0.7;
 }
 
-.card__legend__heart {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card__legend__heart__icone {
-  font-size: 30px;
-  position: absolute;
-  cursor: pointer;
-}
-
-.card__legend__heart__icone--full {
-  background: radial-gradient(at 30% 10%, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  z-index: 1;
-}
-
-.card__legend__heart__icone--empty {
-  background-color: white;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 400ms;
-}
-.card__legend__heart__icone--empty:active {
-  opacity: 0;
-}
-.card__legend__heart__icone--empty:hover {
-  opacity: 0;
-}
-
 .heart button {
   outline: none;
   border: none;
@@ -273,7 +241,7 @@ header {
   width: auto;
 }
 
-.restaurant__title__heart {
+.heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +249,7 @@ header {
 }
 
 .heart-btn {
-  background: linear-gradient(200deg, #9356dc, #ff79da);
+  background: linear-gradient(220deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -300,6 +268,7 @@ header {
 .heart-btn--one:hover:hover + .heart-btn--two {
   opacity: 1;
   z-index: 2;
+  transform: scale(1.2);
 }
 
 .heart-btn--two {
@@ -308,6 +277,7 @@ header {
   top: -1px;
   z-index: 0;
   opacity: 0;
+  transform: scale(1);
   transition-property: all;
   transition-delay: 300ms;
 }
@@ -426,6 +396,7 @@ ol li::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .card .card__legend .card__legend__infos__title {
   font-weight: 700;

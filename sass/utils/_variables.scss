@@ -3,7 +3,8 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
-$radial-gradient: radial-gradient(at 30% 10%, $secondary-color, $primary-color);
+$linear-gradient-btn: linear-gradient(170deg, $secondary-color, $primary-color);
+$linear-gradient-heart: linear-gradient(220deg, $primary-color, $secondary-color);
 
 $background-color:(
     medium-color: rgb(234, 234, 234),
