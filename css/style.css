@@ -102,6 +102,10 @@ button {
   outline: none;
 }
 
+button, a, input {
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   padding-top: 25px;
@@ -212,6 +216,341 @@ header {
   width: 100%;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  opacity: 1;
+  animation: loader-background 2100ms ease-in;
+}
+
+@keyframes loader-background {
+  1% {
+    opacity: 0.98;
+  }
+  99% {
+    opacity: 0.98;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader__spiner {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+.loader__spiner .loader__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pan {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 2;
+  animation: pan 2100ms ease-in-out;
+}
+.pan .pan__pan {
+  height: 12px;
+  width: 60px;
+  background: linear-gradient(#782cd3, #ae80e5);
+  border-radius: 0 0 40px 40px;
+}
+.pan .pan__handle {
+  height: 5px;
+  width: 30px;
+  border-radius: 10px;
+  background: linear-gradient(#782cd3, #ae80e5);
+}
+
+.egg .egg__white {
+  height: 30px;
+  width: 35px;
+  border-radius: 20px 30px 50px 40px;
+  background-color: white;
+  transform: rotate(20deg);
+  display: flex;
+}
+.egg .egg__white .egg__yellow {
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: #FF79DA;
+  margin-top: 6px;
+  margin-left: 9px;
+  filter: drop-shadow(0 2px 2px #FF79DA);
+}
+.egg .egg__white .egg__yellow .egg__center {
+  height: 10px;
+  width: 6px;
+  border-radius: 5px/8px;
+  background-color: #ffc6ef;
+  opacity: 0.7;
+  transform: rotate(25deg);
+  margin-top: 1px;
+  margin-left: 1.5px;
+}
+.egg .egg__white .egg__yellow .egg__center .egg__light {
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 1.5px;
+  left: 0.5px;
+}
+
+.egg--one {
+  margin-left: -25px;
+  animation: egg-spinner 2100ms;
+}
+
+@keyframes egg-spinner {
+  1% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(3turn);
+  }
+}
+@keyframes pan {
+  1% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(30deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.loader--two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bell-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.bell-container .dish-bell-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right bottom;
+  animation: bell-spinner 2100ms ease-in-out;
+}
+.bell-container .dish-bell-up .dish-bell__top {
+  height: 5px;
+  width: 5px;
+  background: linear-gradient(#782cd3, #ae80e5);
+  border-radius: 50%;
+}
+.bell-container .dish-bell-up .dish-bell__bell {
+  height: 35px;
+  width: 60px;
+  background: linear-gradient(#782cd3, #ae80e5);
+  border-radius: 50% 50% 0 0;
+}
+.bell-container .dish-bell-up .dish-bell__bell .bell__reflect {
+  height: 20px;
+  width: 1.5px;
+  border-radius: 40%;
+  background-color: rgba(245, 245, 245, 0.973);
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 12px;
+}
+.bell-container .plate {
+  height: 5px;
+  width: 70px;
+  background: linear-gradient(#782cd3, #ae80e5);
+  border-radius: 0 0 20% 20%;
+}
+
+.egg--two {
+  position: absolute;
+  margin-top: 12.5px;
+}
+
+@keyframes bell-spinner {
+  1% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(-10px) rotate(50deg);
+  }
+}
+.loader--three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 10px;
+  margin-left: 10px;
+}
+.loader--three .wine-glass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader--three .wine-glass .glass {
+  height: 30px;
+  width: 20px;
+  border-radius: 5% 5% 46% 46%;
+  background-color: #c1ede2;
+  border: 0.5px solid #c1ede2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.loader--three .wine-glass .glass .glass__top {
+  height: 8px;
+  width: 20.5px;
+  border-radius: 10px/4px;
+  background-color: #c1ede2;
+  border-bottom: 0.5px solid white;
+  border-top: 0.5px solid white;
+  position: absolute;
+  margin-top: -4px;
+}
+.loader--three .wine-glass .glass .wine-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  margin-top: 12.5px;
+}
+.loader--three .wine-glass .glass .wine-container .wine-top {
+  height: 7.5px;
+  width: 19px;
+  border-radius: 9.5px/4.5px;
+  background-color: #FF79DA;
+  border-bottom: 1px solid white;
+  position: absolute;
+  margin-top: -4px;
+}
+.loader--three .wine-glass .glass .wine-container .wine {
+  height: 15px;
+  width: 19px;
+  background-color: #FF79DA;
+  border-radius: 5% 5% 60% 60%;
+}
+.loader--three .wine-glass .foot {
+  height: 15px;
+  width: 2.5px;
+  background-color: #c1ede2;
+  border-radius: 0 0 10% 10%;
+  z-index: 1;
+}
+.loader--three .wine-glass .foot .foot__reflect {
+  height: 2.5px;
+  width: 2.5px;
+  border-radius: 50%;
+  border-bottom: 1px solid white;
+  position: absolute;
+  margin-top: 13.5px;
+}
+.loader--three .wine-glass .bottom {
+  height: 6px;
+  width: 15px;
+  border-radius: 7.5px/3px;
+  background-color: #c1ede2;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 50px;
+}
+.loader--three .wine-glass .bottom .bottom__reflect {
+  height: 5px;
+  width: 13px;
+  border-radius: 6.5px/2.5px;
+  background-color: #c1ede2;
+  border-bottom: 0.5px solid white;
+}
+.loader--three .glass-reflect {
+  height: 15px;
+  width: 1.5px;
+  border-radius: 40%;
+  background-color: rgba(245, 245, 245, 0.973);
+  opacity: 0.5;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -17.5px;
+}
+
+.wine-glass--one {
+  animation: glass-one 2100ms;
+}
+
+@keyframes glass-one {
+  1% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.wine-glass--two {
+  animation: glass-two 2100ms;
+}
+
+@keyframes glass-two {
+  1% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .radial-gradient-button {
   min-width: 180px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);

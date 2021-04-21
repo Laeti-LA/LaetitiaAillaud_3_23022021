@@ -5,6 +5,7 @@ $tertiary-color: #99E2D0;
 
 $linear-gradient-btn: linear-gradient(170deg, $secondary-color, $primary-color);
 $linear-gradient-heart: linear-gradient(220deg, $primary-color, $secondary-color);
+$linear-gradiant-loader: linear-gradient(darken($primary-color, 10%), lighten($primary-color, 10%));
 
 $background-color:(
     medium-color: rgb(234, 234, 234),
@@ -25,3 +26,4 @@ $breakpoints:(
     tablet-max: 959.99px,
     desktop: 960px,
 );
+

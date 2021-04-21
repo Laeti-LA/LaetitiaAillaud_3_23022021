@@ -1,0 +1,355 @@
+.loader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $tertiary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 1;
+    animation: loader-background 2100ms ease-in;
+}
+
+@keyframes loader-background{
+    1%{
+        opacity: 0.98;
+    }
+    99%{
+        opacity: 0.98;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.loader__spiner{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    .loader__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//Poele et oeuf
+.pan{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 2;
+    animation: pan 2100ms ease-in-out;
+    .pan__pan{
+        height: 12px; 
+        width: 60px;
+        background: $linear-gradiant-loader;
+        border-radius: 0 0 40px 40px;
+    }
+    .pan__handle{
+        height: 5px;
+        width: 30px;
+        border-radius: 10px; 
+        background: $linear-gradiant-loader;
+    }
+}
+
+.egg{
+    .egg__white{
+        height: 30px;
+        width: 35px;
+        border-radius: 20px 30px 50px 40px;
+        background-color: white;
+        transform: rotate(20deg);
+        display: flex;
+        .egg__yellow{
+            height: 15px;
+            width: 15px; 
+            border-radius: 50px;
+            background-color: $secondary-color;
+            margin-top: 6px; 
+            margin-left: 9px;
+            filter: drop-shadow(0 2px 2px $secondary-color);
+            .egg__center{
+                height: 10px;
+                width: 6px; 
+                border-radius: 5px / 8px;
+                background-color: lighten($color: $secondary-color, $amount: 15%);
+                opacity: 0.7;
+                transform: rotate(25deg);
+                margin-top: 1px;
+                margin-left: 1.5px;
+                .egg__light{
+                    height: 3px;
+                    width: 3px; 
+                    border-radius: 50%;
+                    background-color: white;
+                    position: absolute;
+                    top: 1.5px;
+                    left: 0.5px;
+                }
+            }    
+        }
+    }
+}
+.egg--one{
+    margin-left: -25px;
+    animation: egg-spinner 2100ms;
+}
+// Animation oeuf et poele 
+@keyframes egg-spinner{
+1%{
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(3turn);
+}
+}
+
+@keyframes pan{
+    1%{
+        transform: rotate(0);
+    }
+    33%{
+        transform: rotate(30deg);
+    }
+    66%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0);
+    }    
+}
+
+// Oeuf sous cloche 
+.loader--two{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bell-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    .dish-bell-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform-origin: right bottom;
+        animation: bell-spinner 2100ms ease-in-out;
+        .dish-bell__top{
+            height: 5px;
+            width: 5px;
+            background: $linear-gradiant-loader;
+            border-radius: 50%;
+        }
+        .dish-bell__bell{
+            height: 35px;
+            width: 60px;
+            background: $linear-gradiant-loader;
+            border-radius: 50% 50% 0 0;
+            .bell__reflect{
+                height: 20px;
+                width: 1.5px;
+                border-radius: 40%;
+                background-color: rgba(245, 245, 245, 0.973);
+                opacity: 0.5;
+                position: absolute;
+                margin-left: 4px;
+                margin-top: 12px;
+            }
+        }
+    }
+    .plate{
+        height: 5px;
+        width: 70px;
+        background: $linear-gradiant-loader;
+        border-radius: 0 0 20% 20%;
+    }
+}
+.egg--two{
+    position: absolute;
+    margin-top: 12.5px;
+}
+
+@keyframes bell-spinner{
+1%{
+    transform: translateY(0) rotate(0);
+}
+100%{
+    transform: translateY(-10px) rotate(50deg);
+}
+}
+
+// Verres à vin 
+.loader--three{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+    margin-left: 10px;
+    .wine-glass{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .glass{
+            height: 30px; 
+            width: 20px;
+            border-radius: 5% 5% 46% 46%;
+            background-color:lighten($tertiary-color, 10%);
+            border: 0.5px solid lighten($tertiary-color, 10%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .glass__top{
+                height: 8px;
+                width: 20.5px; 
+                border-radius: 10px / 4px;
+                background-color: lighten($tertiary-color, 10%);
+                border-bottom: 0.5px solid white;
+                border-top: 0.5px solid white;
+                position: absolute;
+                margin-top: -4px;
+            }
+            .wine-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                position: absolute;
+                margin-top: 12.5px;
+                .wine-top{
+                    height: 7.5px;
+                    width: 19px; 
+                    border-radius: 9.5px / 4.5px;
+                    background-color: $secondary-color;
+                    border-bottom: 1px solid white;
+                    position: absolute;
+                    margin-top: -4px;
+                }
+                .wine{
+                    height: 15px; 
+                    width: 19px;
+                    background-color: $secondary-color;
+                    border-radius: 5% 5% 60% 60%;
+                }
+            }
+        }
+        .foot{
+            height: 15px;
+            width: 2.5px;
+            background-color:lighten($tertiary-color, 10%);
+            border-radius: 0 0 10% 10%;
+            z-index: 1;
+            .foot__reflect{
+                height: 2.5px;
+                width: 2.5px;
+                border-radius: 50%;
+                border-bottom: 1px solid white;
+                position: absolute;
+                margin-top: 13.5px;
+            }
+        }
+        .bottom{
+            height: 6px;
+            width: 15px; 
+            border-radius: 7.5px / 3px;
+            background-color: lighten($tertiary-color, 10%);
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            margin-top: 50px;
+            .bottom__reflect{
+                height: 5px;
+                width: 13px; 
+                border-radius: 6.5px / 2.5px;
+                background-color: lighten($tertiary-color, 10%);
+                border-bottom: 0.5px solid white;
+            }
+        }
+    }
+    .glass-reflect{
+        height: 15px;
+        width: 1.5px;
+        border-radius: 40%;
+        background-color: rgba(245, 245, 245, 0.973);
+        opacity: 0.5;
+        position: absolute;
+        margin-left: -15px;
+        margin-top: -17.5px;
+    }
+}
+
+// Animation verres à vin 
+.wine-glass--one{
+    animation: glass-one 2100ms;
+}
+
+@keyframes glass-one{
+    1%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.wine-glass--two{
+    animation: glass-two 2100ms;
+}
+
+@keyframes glass-two{
+    1%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
