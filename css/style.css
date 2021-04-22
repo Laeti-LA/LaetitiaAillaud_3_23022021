@@ -666,10 +666,10 @@ header {
   z-index: 1;
   transition: all 300ms ease-out;
 }
-.heart-btn--one:focus {
+.heart-btn--one:hover {
   background-position: center center;
 }
-.heart-btn--one:focus:focus + .heart-btn--two {
+.heart-btn--one:hover:hover + .heart-btn--two {
   opacity: 1;
   z-index: 2;
   transform: scale(1.2);
