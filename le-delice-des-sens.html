@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/png" href="images/omf-logo.png"/>
+        <script src="https://kit.fontawesome.com/56e0717261.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>ohmyfood - Réservez votre menu dans un restaurant d'exception</title>
+    </head>
+
+    <body>
+        <!-- Page restaurant -->
+
+        <header>
+            <!-- Logo centré + icone flèche retour à la page d'accueil -->
+            <div>
+                <a href="index.html">
+                    <span class="header-return">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                </a>
+                <img class="logo" src="images/ohmyfood-logo.svg" alt="Logo"/>
+            </div>
+        </header>
+
+        <section class="restaurant container">
+            <div class="restaurant__header">
+                <img class="restaurant__header__image" src="images/le-delice-des-sens.jpg" alt="Le Délice des Sens"/>
+            </div>
+            <div class="restaurant__menu container">
+                <div class="restaurant__title container__child">
+                    <h2 class="title-font-family">Le délice des sens</h2>
+                    <div class="heart restaurant__title__heart">
+                        <button class="heart-btn heart-btn--one" type="button">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="heart-btn heart-btn--two" type="button">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="restaurant__menu__content container__child">
+                    <article class="menu__starters menu-container">
+                        <h3 class="menu__dishes__title"><span class="underline">ENTR</span>EES</h3>
+                        <ul class="menu__dishes__list">
+                            <li class="dish starter--one">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Tartare de thon</h5>
+                                    <p class="dish__info--details">Assaisonné au yuzu</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">25€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Tartare de thon"/>                                
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="dish starter--two">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Bouchée de homard croustillant</h5>
+                                    <p class="dish__info--details">Et sa farandole de petits légumes</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">35€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Bouchée de homard"/>                                 
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="dish starter--three">   
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Velouté de cèpes</h5>
+                                    <p class="dish__info--details">Aux truffes</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">20€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Velouté aux cèpes"/>                                            
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu__main-courses">
+                        <h3 class="menu__dishes__title"><span class="underline">PLAT</span>S</h3>
+                        <ul class="menu__dishes__list">
+                            <li class="dish main-courses--one">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Poulet rôti aux herbes de Provence</h5>
+                                    <p class="dish__info--details">Et sa crème de truffe</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">40€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Poulet rôti"/>                                           
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="dish main-courses--two">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Langouste rôtie</h5>
+                                    <p class="dish__info--details">Et ses légumes de saison</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">35€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Langoustine rôtie"/>                                           
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="dish main-courses--three">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Côte de boeuf Angus</h5>
+                                    <p class="dish__info--details">Et sa purée de panais</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">44€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Côte de boeuf"/>                                          
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu__desserts">
+                        <h3 class="menu__dishes__title"><span class="underline">DESS</span>ERTS</h3>
+                        <ul class="menu__dishes__list">
+                            <li class="dish dessert--one">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Farandole de desserts</h5>
+                                    <p class="dish__info--details">Du chef</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">18€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Farandole de desserts"/>                                           
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="dish dessert--two">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Crème brulée</h5>
+                                    <p class="dish__info--details">Revisitée</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">22€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Crème brûlée"/>                                          
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                            <li class="dish dessert--three">
+                                <div class="dish__info-bloc">
+                                    <h5 class="dish__info--title">Tiramisu</h5>
+                                    <p class="dish__info--details">À la noisette</p>
+                                </div>
+                                <div class="dish__info--price">
+                                    <span class="price">23€</span>
+                                </div>
+                                <input type="button" class="dish__select-button" value="Tiramisu"/>                                               
+                                <div class="menu__checkbox">
+                                    <i class="menu__checkbox--icon fas fa-check-circle"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="menu__order-button">
+                    <button class="presentation__discover__button radial-gradient-button" type="button">Commander</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <!-- Menu de navigation (liste à puces 4 liens) -->
+            <div class="container footer-container">
+                <h3 class="footer-container__title title-font-family">ohmyfood</h3>
+                <nav class="footer-container__menu">
+                    <ul>
+                        <li>
+                            <i class="footer__icon fas fa-utensils"></i>
+                            <a href="#">Proposer un restaurant</a>
+                        </li>
+                        <li>
+                            <i class="footer__icon fas fa-hands-helping"></i>
+                            <a href="#">Devenir partenaire</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="mailto:laetitia.aillaud@hotmail.fr">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
+        </footer>
+    </body>
+</html>
