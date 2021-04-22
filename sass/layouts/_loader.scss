@@ -34,7 +34,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    gap: 20px;
     .loader__container{
         display: flex;
         flex-direction: column;
@@ -138,6 +137,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    margin-left: 20px;
 }
 .bell-container{
     display: flex;
@@ -184,7 +184,7 @@
 }
 .egg--two{
     position: absolute;
-    margin-top: 6px;
+    margin-top: 3px;
     animation: egg-spinner 2700ms forwards;
 }
 
@@ -213,7 +213,7 @@
     justify-content: center;
     align-items: flex-end;
     column-gap: 30px;
-    margin-left: 10px;
+    margin-left: 30px;
     .wine-glass{
         display: flex;
         flex-direction: column;
