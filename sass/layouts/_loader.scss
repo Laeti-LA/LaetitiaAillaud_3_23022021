@@ -34,15 +34,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    .loader__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 //Poele et oeuf
+.loader--one{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 .pan{
     display: flex;
     flex-direction: row;
@@ -184,7 +184,7 @@
 }
 .egg--two{
     position: absolute;
-    margin-top: 3px;
+    margin-bottom: 8px;
     animation: egg-spinner 2700ms forwards;
 }
 

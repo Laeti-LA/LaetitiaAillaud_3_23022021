@@ -252,7 +252,8 @@ header {
   justify-content: center;
   align-items: flex-end;
 }
-.loader__spiner .loader__container {
+
+.loader--one {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -398,7 +399,7 @@ header {
 
 .egg--two {
   position: absolute;
-  margin-top: 3px;
+  margin-bottom: 8px;
   animation: egg-spinner 2700ms forwards;
 }
 
