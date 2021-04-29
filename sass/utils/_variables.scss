@@ -1,3 +1,4 @@
+
 // Couleurs
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -14,6 +15,7 @@ $background-color:(
 );
 
 $shaddow-color: darken(map-get($map: $background-color, $key: medium-color), 10%);
+
 
 //Taille police 
 $font-size: 16px 20px 25px;
